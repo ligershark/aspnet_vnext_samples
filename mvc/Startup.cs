@@ -8,6 +8,7 @@ namespace KWebStartup
     {
         public void Configure(IBuilder app)
         {
+            app.UseStaticFiles();
             app.UseErrorPage();
 
             app.UseServices(services =>

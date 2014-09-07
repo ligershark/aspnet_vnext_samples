@@ -1,9 +1,13 @@
 using System;
 
-public class Program
+namespace ConsoleApp1
 {
-    public static void Main()
+    public class Program
     {
-        Console.WriteLine("Hello World");
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World");
+            Console.ReadLine();
+        }
     }
 }

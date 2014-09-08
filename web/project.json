@@ -12,7 +12,6 @@
     "kestrel": "Microsoft.AspNet.Hosting --server Kestrel"
   },
   "frameworks": {
-    "net45": {},
     "k10": {}
   }
 }

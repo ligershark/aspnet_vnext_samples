@@ -13,12 +13,6 @@
     "kestrel": "Microsoft.AspNet.Hosting --server Kestrel"
   },
   "frameworks": {
-    "net45": {
-      "dependencies": {
-        "System.Runtime": "",
-        "System.ComponentModel.DataAnnotations": ""
-      }
-    },
     "k10": {}
   }
 }

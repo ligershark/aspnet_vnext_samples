@@ -12,7 +12,7 @@
     "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5001",
     "kestrel": "Microsoft.AspNet.Hosting --server Kestrel"
   },
-  "configurations": {
+  "frameworks": {
     "net45": {
       "dependencies": {
         "System.Runtime": "",

@@ -11,7 +11,7 @@ namespace KWebStartup
             app.UseStaticFiles();
             app.UseErrorPage();
 
-            app.UseServices(services =>
+            app.UsePerRequestServices(services =>
             {
                 services.AddMvc();
             });

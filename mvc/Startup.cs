@@ -11,14 +11,25 @@ namespace KWebStartup
             app.UseStaticFiles();
             app.UseErrorPage();
 
-            app.UsePerRequestServices(services =>
+            app.UseServices(services =>
             {
                 services.AddMvc();
             });
 
-            app.UseMvc();
+            // Add MVC to the request pipeline
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller}/{action}/{id?}",
+                    defaults: new { controller = "Home", action = "Index" });
+
+                routes.MapRoute(
+                    name: "api",
+                    template: "{controller}/{id?}");
+            });
 
             app.UseWelcomePage();
-        }       
+        }
     }
 }

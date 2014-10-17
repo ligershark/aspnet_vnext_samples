@@ -9,7 +9,6 @@ namespace KWebStartup
         public void Configure(IApplicationBuilder app)
         {
             app.UseStaticFiles();
-            app.UseErrorPage();
 
             app.UseServices(services =>
             {
@@ -28,8 +27,6 @@ namespace KWebStartup
                     name: "api",
                     template: "{controller}/{id?}");
             });
-
-            app.UseWelcomePage();
         }
     }
 }

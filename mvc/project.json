@@ -13,6 +13,6 @@
         "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5004"
     },
     "frameworks": {
-        "aspnet50" : { },
+        "aspnet50" : { }
     }
 }

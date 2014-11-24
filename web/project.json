@@ -5,11 +5,13 @@
     "Microsoft.AspNet.Hosting": "1.0.0-beta1",
     "Microsoft.AspNet.Server.WebListener": "1.0.0-beta1",
     "Microsoft.AspNet.StaticFiles": "1.0.0-beta1",
+    "Microsoft.Framework.CodeGenerators.Mvc": "1.0.0-*",
     "Kestrel": "1.0.0-beta1"
   },
   "commands": {
     "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5001",
-    "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5004"
+    "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5004",
+    "gen": "Microsoft.Framework.CodeGeneration"
   },
   "frameworks": {
     "aspnet50": {}
